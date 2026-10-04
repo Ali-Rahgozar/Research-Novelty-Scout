@@ -15,13 +15,13 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    I[Research Idea] --> D[Decompose Idea]
-    D --> Q[Generate Search Queries]
-    Q --> S[Search Literature]
-    S --> P[Analyze Candidate Papers]
-    P --> C[Compare With Research Idea]
-    C --> E{Enough Evidence?}
-    E -->|No| Q
-    E -->|Yes| R[Generate Research Report]
+    I[Research Idea] --> LLM[LLM]
 
+    LLM -->|Tool call| T[search_papers]
+    T --> R[Tool Result]
+    R --> LLM
+
+    LLM -->|No tool call| O[Final Answer]
+
+    LLM -.->|Repeated iterations| LLM
 ```
