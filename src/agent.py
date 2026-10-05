@@ -2,7 +2,7 @@ import json
 import sys
 import argparse
 from pathlib import Path
-from tools.fake_search import search_papers
+from tools.search_papers import search_papers
 
 
 TOOLS = {
