@@ -10,7 +10,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from src.model import MODEL_NAME, client
-from src.tools.search_papers import search_papers_with_data
+from tools.search_papers import search_papers_with_data
 
 
 # Each tool returns (text_for_llm, structured_records).
