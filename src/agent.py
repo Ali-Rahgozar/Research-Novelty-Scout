@@ -46,6 +46,8 @@ For this first prototype, you have access to a paper-search tool.
 Use the tool when it would help answer the user's research question.
 Once you have enough information, provide a concise answer and mention what evidence you used.
 Do not claim that an idea is definitely novel just because the search found nothing.
+When using multiple searches, treat papers with the same OpenAlex ID as the same paper.
+Do not count repeated retrievals of the same paper as independent evidence.
 """.strip()
 
 
