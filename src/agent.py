@@ -211,14 +211,6 @@ def run_agent_traced(
     }
 
 
-def run_agent(
-    user_message: str,
-    max_turns: int = 8,
-    verbose: bool = False
-) -> str:
-    return run_agent_traced(user_message, max_turns, verbose)["answer"]
-
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(

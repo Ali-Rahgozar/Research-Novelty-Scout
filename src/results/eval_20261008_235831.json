@@ -1,0 +1,629 @@
+{
+  "config": {
+    "threshold": 0.88,
+    "max_turns": 8,
+    "temperature": null,
+    "gold_file": "C:\\Users\\A_R\\Desktop\\Research Novelty Scout\\src\\gold_set.json"
+  },
+  "aggregate": {
+    "n_ideas": 3,
+    "macro_precision": 0.09188034188034189,
+    "macro_recall": 0.39999999999999997,
+    "macro_f1": 0.1481924508240298,
+    "micro_precision": 0.09243697478991597,
+    "micro_recall": 0.38461538461538464,
+    "micro_f1": 0.14905149051490515
+  },
+  "results": [
+    {
+      "id": "peft_lowrank",
+      "category": "nlp",
+      "idea": "I want to adapt a large pretrained language model to downstream tasks by freezing the original weights and injecting small trainable low-rank matrices into the transformer layers, so only a tiny fraction of parameters is updated.",
+      "score": {
+        "precision": 0.02564102564102564,
+        "recall": 0.2,
+        "f1": 0.045454545454545456,
+        "n_retrieved": 39,
+        "n_relevant_retrieved": 1,
+        "n_gold": 5,
+        "n_gold_found": 1,
+        "gold_found": [
+          "The Power of Scale for Parameter-Efficient Prompt Tuning"
+        ],
+        "gold_missed": [
+          "LoRA: Low-Rank Adaptation of Large Language Models",
+          "Parameter-Efficient Transfer Learning for NLP",
+          "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+          "QLoRA: Efficient Finetuning of Quantized LLMs"
+        ],
+        "retrieved_not_in_gold": [
+          "Speech and Language Recognition with Low-rank Adaptation of Pretrained Models",
+          "Attention Heatmap Drift in a Contrastively Pretrained Vision–Language Model: A Controlled Matched-Learning-Rate Comparison of Full Fine-Tuning and Low-Rank Adaptation",
+          "Fine-grained emotion recognition using RoBERTa with low-rank adaptation and retrieval-augmented context contrastive definition pretraining masked language modeling and multi-dataset transfer learning",
+          "Low-Rank Adaptation of Large Language Model Rescoring for Parameter-Efficient Speech Recognition",
+          "DyLoRA: Parameter-Efficient Tuning of Pre-trained Models using Dynamic Search-Free Low-Rank Adaptation",
+          "Frozen Weights as Prior for Parameter-Efficient Fine-Tuning",
+          "Parameter-efficient fine-tuning of large-scale pre-trained language models",
+          "Towards Adaptive Prefix Tuning for Parameter-Efficient Language Model Fine-tuning",
+          "BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models",
+          "LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models",
+          "AdapterDrop: On the Efficiency of Adapters in Transformers",
+          "Adapter-based fine-tuning for PRIMERA",
+          "Efficient Tomato Leaf Disease Classification Using Adapter Based Fine Tuning of Vision Transformers",
+          "Meta-Adapters: Parameter Efficient Few-shot Fine-tuning through Meta-Learning",
+          "Delta-LoRA: Fine-Tuning High-Rank Parameters with the Delta of Low-Rank Matrices",
+          "A survey on LoRA of large language models",
+          "LoRA Fine-Tuning of a 3B Code LLM for Algorithmic Efficiency",
+          "Null-LoRA: Low-Rank Adaptation on Null Space",
+          "SDS-LoRA: Overcoming Anisotropic Gradient Scaling in Low-Rank Adaptation",
+          "Intrinsic Dimensionality Explains the Effectiveness of Language Model Fine-Tuning",
+          "Fine-Tuning Language Models with Just Forward Passes",
+          "A Comparative Study of Learning Paradigms in Large Language Models via Intrinsic Dimension",
+          "A Comparative Study of Learning Paradigms in Large Language Models via Intrinsic Dimension",
+          "DoRA: Weight-Decomposed Low-Rank Adaptation",
+          "OW-LoRA:Orthogonal Weight-decomposed Low-Rank Adaptation",
+          "BiDoRA: Bi-level Optimization-Based Weight-Decomposed Low-Rank Adaptation",
+          "LoTR: Low Tensor Rank Weight Adaptation",
+          "MAP: Revisiting Weight Decomposition for Low-Rank Adaptation",
+          "Prompting GPT-3 To Be Reliable",
+          "Hadamard Adapter: An Extreme Parameter-Efficient Adapter Tuning Method for Pre-trained Language Models",
+          "Tiny-Attention Adapter: Contexts Are More Important Than the Number of Parameters",
+          "Hadamard Adapter: An Extreme Parameter-Efficient Adapter Tuning Method for Pre-trained Language Models",
+          "LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention",
+          "AdaLoRA: Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning",
+          "AdaLoRA-QAT: Adaptive Low-Rank and Quantization-Aware Segmentation",
+          "A Bayesian Interpretation of Adaptive Low-Rank Adaptation",
+          "Statistical Inference for Rank Allocation in Low-Rank Adaptation",
+          "A Bayesian Interpretation of Adaptive Low-Rank Adaptation"
+        ]
+      },
+      "tool_calls": [
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\": \"low-rank adaptation pretrained language models\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W4402111642",
+            "https://openalex.org/W7151031315",
+            "https://openalex.org/W7171820338",
+            "https://openalex.org/W4391021820",
+            "https://openalex.org/W4386566659"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\": \"parameter-efficient fine-tuning frozen weights\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W4406416097",
+            "https://openalex.org/W3152956381",
+            "https://openalex.org/W4322766882",
+            "https://openalex.org/W4385570973",
+            "https://openalex.org/W3176828726"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\": \"adapters transformer fine-tuning small parameters\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W4389524317",
+            "https://openalex.org/W3094491777",
+            "https://openalex.org/W4416851699",
+            "https://openalex.org/W7127054660",
+            "https://openalex.org/W7169952836"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\": \"LoRA low-rank matrices downstream tasks\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W4386560155",
+            "https://openalex.org/W4403753254",
+            "https://openalex.org/W3168867926",
+            "https://openalex.org/W7116127333",
+            "https://openalex.org/W7164889672"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\":\"intrinsic dimension language model fine-tuning\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W3118216348",
+            "https://openalex.org/W4378770452",
+            "https://openalex.org/W4322766882",
+            "https://openalex.org/W4405254031",
+            "https://openalex.org/W4411119047"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\":\"low-rank decomposition weight update adaptation\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W4391871574",
+            "https://openalex.org/W7140186821",
+            "https://openalex.org/W4403570084",
+            "https://openalex.org/W4391591576",
+            "https://openalex.org/W4416609205"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\":\"GLUE benchmark RoBERTa GPT-2 adapters comparison\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W4306808680",
+            "https://openalex.org/W4387848667",
+            "https://openalex.org/W4385573646",
+            "https://openalex.org/W4403753248",
+            "https://openalex.org/W4361229539"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\":\"AdaLoRA adaptive budget allocation low-rank\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W4330338093",
+            "https://openalex.org/W7149210299",
+            "https://openalex.org/W4403705202",
+            "https://openalex.org/W7170196061",
+            "https://openalex.org/W4408353351"
+          ]
+        }
+      ],
+      "total_retrievals": 40,
+      "hit_max_turns": false,
+      "retrieved_titles": [
+        "Speech and Language Recognition with Low-rank Adaptation of Pretrained Models",
+        "Attention Heatmap Drift in a Contrastively Pretrained Vision–Language Model: A Controlled Matched-Learning-Rate Comparison of Full Fine-Tuning and Low-Rank Adaptation",
+        "Fine-grained emotion recognition using RoBERTa with low-rank adaptation and retrieval-augmented context contrastive definition pretraining masked language modeling and multi-dataset transfer learning",
+        "Low-Rank Adaptation of Large Language Model Rescoring for Parameter-Efficient Speech Recognition",
+        "DyLoRA: Parameter-Efficient Tuning of Pre-trained Models using Dynamic Search-Free Low-Rank Adaptation",
+        "Frozen Weights as Prior for Parameter-Efficient Fine-Tuning",
+        "The Power of Scale for Parameter-Efficient Prompt Tuning",
+        "Parameter-efficient fine-tuning of large-scale pre-trained language models",
+        "Towards Adaptive Prefix Tuning for Parameter-Efficient Language Model Fine-tuning",
+        "BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models",
+        "LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models",
+        "AdapterDrop: On the Efficiency of Adapters in Transformers",
+        "Adapter-based fine-tuning for PRIMERA",
+        "Efficient Tomato Leaf Disease Classification Using Adapter Based Fine Tuning of Vision Transformers",
+        "Meta-Adapters: Parameter Efficient Few-shot Fine-tuning through Meta-Learning",
+        "Delta-LoRA: Fine-Tuning High-Rank Parameters with the Delta of Low-Rank Matrices",
+        "A survey on LoRA of large language models",
+        "LoRA Fine-Tuning of a 3B Code LLM for Algorithmic Efficiency",
+        "Null-LoRA: Low-Rank Adaptation on Null Space",
+        "SDS-LoRA: Overcoming Anisotropic Gradient Scaling in Low-Rank Adaptation",
+        "Intrinsic Dimensionality Explains the Effectiveness of Language Model Fine-Tuning",
+        "Fine-Tuning Language Models with Just Forward Passes",
+        "A Comparative Study of Learning Paradigms in Large Language Models via Intrinsic Dimension",
+        "A Comparative Study of Learning Paradigms in Large Language Models via Intrinsic Dimension",
+        "DoRA: Weight-Decomposed Low-Rank Adaptation",
+        "OW-LoRA:Orthogonal Weight-decomposed Low-Rank Adaptation",
+        "BiDoRA: Bi-level Optimization-Based Weight-Decomposed Low-Rank Adaptation",
+        "LoTR: Low Tensor Rank Weight Adaptation",
+        "MAP: Revisiting Weight Decomposition for Low-Rank Adaptation",
+        "Prompting GPT-3 To Be Reliable",
+        "Hadamard Adapter: An Extreme Parameter-Efficient Adapter Tuning Method for Pre-trained Language Models",
+        "Tiny-Attention Adapter: Contexts Are More Important Than the Number of Parameters",
+        "Hadamard Adapter: An Extreme Parameter-Efficient Adapter Tuning Method for Pre-trained Language Models",
+        "LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention",
+        "AdaLoRA: Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning",
+        "AdaLoRA-QAT: Adaptive Low-Rank and Quantization-Aware Segmentation",
+        "A Bayesian Interpretation of Adaptive Low-Rank Adaptation",
+        "Statistical Inference for Rank Allocation in Low-Rank Adaptation",
+        "A Bayesian Interpretation of Adaptive Low-Rank Adaptation"
+      ],
+      "answer": "# Verdict: **High overlap**\n\nThe proposed idea is almost a verbatim description of **Low-Rank Adaptation (LoRA)**: freezing pretrained weights and injecting small trainable low-rank matrices into transformer layers, updating only a tiny fraction of parameters. This is a foundational, heavily-cited method with an extensive follow-up literature.\n\n## Idea breakdown\n- **Task:** downstream task adaptation / transfer learning (NLU, generation, QA, classification).\n- **Modality/subfield:** NLP (large pretrained language models); extended to vision/speech.\n- **Method:** PEFT / delta-tuning; freeze backbone, inject trainable rank-decomposition matrices (low-rank = product of two small matrices) into transformer layers.\n- **Data/benchmarks:** GLUE, E2E, DART, WebNLG; RoBERTa, DeBERTa, GPT-2/GPT-3.\n- **Evaluation:** task accuracy/F1 and parameter efficiency (trainable-parameter count, memory, inference latency).\n\n## Closest prior work\n1. **LoRA: Low-Rank Adaptation of Large Language Models** (Hu et al., 2021) — overlaps on *every* facet: it literally \"freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer,\" reducing trainable parameters ~10,000×. This is the idea itself.\n2. **DyLoRA** (Valipour et al., 2023) — same task/method; adds search-free dynamic rank. Differs by training over a rank range.\n3. **AdaLoRA** (Zhang et al., 2023) — same frozen-backbone/low-rank setting; differs by adaptively allocating rank budget via SVD-based importance.\n4. **Delta-LoRA** (Zi et al., 2023) — same setting; differs by also propagating learning to pretrained weights (partially unfreezing).\n5. **Intrinsic Dimensionality Explains the Effectiveness of Language Model Fine-Tuning** (Aghajanyan et al., 2021) — the motivation behind low-rank adaptation, showing fine-tuning operates in a low intrinsic dimension.\n\nBroader context from **Parameter-efficient fine-tuning of large-scale PLMs** (Ding et al., 2023) and the **LoRA survey** (Mao et al., 2024) confirms this is a mature, crowded subfield.\n\n## Where novelty could lie\nAs stated, the core idea is **not novel** — it is a known method for known tasks. Plausible genuine novelty would require one of:\n- **A new efficiency/scale regime** (e.g., extreme rank, hardware-aware or quantized low-rank updates).\n- **A new application domain/modality/dataset** (e.g., first low-rank adaptation for a specific scientific or multimodal task).\n- **A new method component** (rank allocation, alternative parameterization, initialization) addressing the LoRA-vs-full-finetuning gap.\n\nStill to check: the specific rank-placement choices, initialization scheme, and target datasets the user intends, and whether they intend any variant beyond vanilla LoRA.\n\n## Search coverage\nQueries run: *low-rank adaptation pretrained language models*; *parameter-efficient fine-tuning frozen weights*; *adapters transformer fine-tuning small parameters*; *LoRA low-rank matrices downstream tasks*; *intrinsic dimension language model fine-tuning*; *low-rank decomposition weight update adaptation*; *AdaLoRA adaptive budget allocation*; *GLUE benchmark RoBERTa GPT-2 adapters comparison*. Only top few results per query were inspected (abstracts only, OpenAlex coverage); citation counts skew toward older work. Given the exact match to LoRA, the High-overlap verdict is robust."
+    },
+    {
+      "id": "vit_patches",
+      "category": "vision",
+      "idea": "Can we drop convolutions for image classification entirely by cutting an image into fixed-size patches, embedding them as tokens, and feeding them to a standard transformer encoder?",
+      "score": {
+        "precision": 0.05,
+        "recall": 0.25,
+        "f1": 0.08333333333333334,
+        "n_retrieved": 40,
+        "n_relevant_retrieved": 2,
+        "n_gold": 4,
+        "n_gold_found": 1,
+        "gold_found": [
+          "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"
+        ],
+        "gold_missed": [
+          "Training data-efficient image transformers & distillation through attention",
+          "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+          "Attention Is All You Need"
+        ],
+        "retrieved_not_in_gold": [
+          "Spatial–Spectral Transformer With Patch-Local Mixed-Axis 2-D Rotary Position Embedding for Hyperspectral Image Classification",
+          "Vision Transformers for Remote Sensing Image Classification",
+          "DPT: Deformable Patch-based Transformer for Visual Recognition",
+          "SpectralFormer: Rethinking Hyperspectral Image Classification with Transformers",
+          "A vision transformer for emphysema classification using CT images",
+          "Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction without Convolutions",
+          "ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision",
+          "Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction without Convolutions",
+          "Aggregated Pyramid Vision Transformer: Split-transform-merge Strategy for Image Recognition without Convolutions",
+          "Aggregated Pyramid Vision Transformer: Split-transform-merge Strategy for Image Recognition without Convolutions",
+          "Not All Patches are What You Need: Expediting Vision Transformers via Token Reorganizations",
+          "TransFG: A Transformer Architecture for Fine-Grained Recognition",
+          "All Tokens Matter: Token Labeling for Training Better Vision Transformers",
+          "Adaptive Tokenization: Rethinking Patch Embedding for Vision Transformers",
+          "Face Recognition via Transformer Token Distillation",
+          "Bottleneck Transformers for Visual Recognition",
+          "Going deeper with Image Transformers",
+          "Vision Transformers for Vein Biometric Recognition",
+          "Emu: Generative Pretraining in Multimodality",
+          "Video PreTraining (VPT): Learning to Act by Watching Unlabeled Online Videos",
+          "End-to-end Generative Pretraining for Multimodal Video Captioning",
+          "Generative pretraining from large-scale transcriptomes for single-cell deciphering",
+          "Exploring the capabilities and limitations of GPT and Chat GPT in natural language processing",
+          "Stand-Alone Self-Attention in Vision Models",
+          "Exploring Self-attention for Image Recognition",
+          "Axial-DeepLab: Stand-Alone Axial-Attention for Panoptic Segmentation",
+          "Local Multi-Head Channel Self-Attention for Facial Expression Recognition",
+          "AttendNets: Tiny Deep Image Recognition Neural Networks for the Edge via Visual Attention Condensers",
+          "DeiT-LT: Distillation Strikes Back for Vision Transformer Training on Long-Tailed Datasets",
+          "DeiT-LT Distillation Strikes Back for Vision Transformer Training on Long-Tailed Datasets",
+          "Efficient vision transformer: application of data-efficient image transformer for aero engine bearing fault classification",
+          "DearKD: Data-Efficient Early Knowledge Distillation for Vision Transformers",
+          "Data-Efficient Training of Pure Vision Transformers for the Task of Chest X-ray Abnormality Detection Using Knowledge Distillation",
+          "BEiT: BERT Pre-Training of Image Transformers",
+          "Vision transformer with masked autoencoders for referable diabetic retinopathy classification based on large-size retina image",
+          "High accuracy with low costs: the pretrain-finetune paradigm for classification with transformer-based language models",
+          "A Review of Transformer Networks in MRI Image Classification",
+          "Large Scale Transfer Learning for Differentially Private Image Classification"
+        ]
+      },
+      "tool_calls": [
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\":\"image classification transformer patch embedding\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W7114915601",
+            "https://openalex.org/W3128592650",
+            "https://openalex.org/W3187216907",
+            "https://openalex.org/W3214821343",
+            "https://openalex.org/W3217728966"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\":\"vision transformer without convolutions\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W3131500599",
+            "https://openalex.org/W3126792443",
+            "https://openalex.org/W3203606893",
+            "https://openalex.org/W4301784820",
+            "https://openalex.org/W4225451902"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\":\"patches as tokens image recognition transformer\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W4221156361",
+            "https://openalex.org/W3139434170",
+            "https://openalex.org/W3172801447",
+            "https://openalex.org/W7109081376",
+            "https://openalex.org/W4413986527"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\":\"pure transformer image recognition ImageNet\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W3094502228",
+            "https://openalex.org/W3119786062",
+            "https://openalex.org/W3122484828",
+            "https://openalex.org/W3146097248",
+            "https://openalex.org/W4323065905"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\":\"generative pretraining pixels image GPT unlabeled\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W4384112212",
+            "https://openalex.org/W4283460722",
+            "https://openalex.org/W4221147517",
+            "https://openalex.org/W4366526178",
+            "https://openalex.org/W4365152688"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\":\"stand-alone self-attention image recognition\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W2949718784",
+            "https://openalex.org/W3022469715",
+            "https://openalex.org/W3011199263",
+            "https://openalex.org/W3212708089",
+            "https://openalex.org/W3090836175"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\":\"vision transformer data-efficient training DeiT distillation\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W4402753620",
+            "https://openalex.org/W4393969465",
+            "https://openalex.org/W4410120216",
+            "https://openalex.org/W4225138821",
+            "https://openalex.org/W4294975107"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\":\"transformer image classification pretrain large scale data requirement\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W3170863103",
+            "https://openalex.org/W4392502787",
+            "https://openalex.org/W7204881424",
+            "https://openalex.org/W4401712553",
+            "https://openalex.org/W4229442835"
+          ]
+        }
+      ],
+      "total_retrievals": 40,
+      "hit_max_turns": false,
+      "retrieved_titles": [
+        "Spatial–Spectral Transformer With Patch-Local Mixed-Axis 2-D Rotary Position Embedding for Hyperspectral Image Classification",
+        "Vision Transformers for Remote Sensing Image Classification",
+        "DPT: Deformable Patch-based Transformer for Visual Recognition",
+        "SpectralFormer: Rethinking Hyperspectral Image Classification with Transformers",
+        "A vision transformer for emphysema classification using CT images",
+        "Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction without Convolutions",
+        "ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision",
+        "Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction without Convolutions",
+        "Aggregated Pyramid Vision Transformer: Split-transform-merge Strategy for Image Recognition without Convolutions",
+        "Aggregated Pyramid Vision Transformer: Split-transform-merge Strategy for Image Recognition without Convolutions",
+        "Not All Patches are What You Need: Expediting Vision Transformers via Token Reorganizations",
+        "TransFG: A Transformer Architecture for Fine-Grained Recognition",
+        "All Tokens Matter: Token Labeling for Training Better Vision Transformers",
+        "Adaptive Tokenization: Rethinking Patch Embedding for Vision Transformers",
+        "Face Recognition via Transformer Token Distillation",
+        "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+        "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+        "Bottleneck Transformers for Visual Recognition",
+        "Going deeper with Image Transformers",
+        "Vision Transformers for Vein Biometric Recognition",
+        "Emu: Generative Pretraining in Multimodality",
+        "Video PreTraining (VPT): Learning to Act by Watching Unlabeled Online Videos",
+        "End-to-end Generative Pretraining for Multimodal Video Captioning",
+        "Generative pretraining from large-scale transcriptomes for single-cell deciphering",
+        "Exploring the capabilities and limitations of GPT and Chat GPT in natural language processing",
+        "Stand-Alone Self-Attention in Vision Models",
+        "Exploring Self-attention for Image Recognition",
+        "Axial-DeepLab: Stand-Alone Axial-Attention for Panoptic Segmentation",
+        "Local Multi-Head Channel Self-Attention for Facial Expression Recognition",
+        "AttendNets: Tiny Deep Image Recognition Neural Networks for the Edge via Visual Attention Condensers",
+        "DeiT-LT: Distillation Strikes Back for Vision Transformer Training on Long-Tailed Datasets",
+        "DeiT-LT Distillation Strikes Back for Vision Transformer Training on Long-Tailed Datasets",
+        "Efficient vision transformer: application of data-efficient image transformer for aero engine bearing fault classification",
+        "DearKD: Data-Efficient Early Knowledge Distillation for Vision Transformers",
+        "Data-Efficient Training of Pure Vision Transformers for the Task of Chest X-ray Abnormality Detection Using Knowledge Distillation",
+        "BEiT: BERT Pre-Training of Image Transformers",
+        "Vision transformer with masked autoencoders for referable diabetic retinopathy classification based on large-size retina image",
+        "High accuracy with low costs: the pretrain-finetune paradigm for classification with transformer-based language models",
+        "A Review of Transformer Networks in MRI Image Classification",
+        "Large Scale Transfer Learning for Differentially Private Image Classification"
+      ],
+      "answer": "# Overlap Report\n\n## Verdict: **High overlap**\nThe proposed idea is essentially the Vision Transformer (ViT) recipe, published as Dosovitskiy et al., \"An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale\" (2020/2021). The stated mechanism — cut image into fixed-size patches, embed as tokens, feed a standard transformer encoder for classification — matches the prior work's core contribution almost verbatim.\n\n## Idea breakdown\n- **Problem/task:** image classification (whole-image, single-label).\n- **Modality:** vision (natural 2D images).\n- **Method:** convolution-free; fixed-size non-overlapping patch tokenization + linear patch embedding + positional embeddings + a *standard* transformer encoder; no CNN inductive bias.\n- **Data/benchmark:** ImageNet, CIFAR-100, VTAB; large-scale pretraining then transfer.\n- **Evaluation:** top-1 classification accuracy; comparisons to state-of-the-art CNNs; training-compute efficiency.\n\n## Closest prior work\n1. **An Image is Worth 16x16 Words (ViT), 2020/2021** — identical on every facet: task, modality, method, data regime, and evaluation. This is the idea itself. (Same paper appears as two OpenAlex records; one piece of evidence.)\n2. **Stand-Alone Self-Attention in Vision Models, 2019** — same goal of removing convolutions for image recognition; differs in keeping a ResNet/cnn-style layout with local self-attention layers rather than patch tokens fed to a standard encoder.\n3. **Pyramid Vision Transformer, 2021** — convolution-free backbone; differs by targeting dense prediction and adding a pyramid, not a plain patch-token classifier.\n4. **BEiT, 2021** — uses the same patch-token ViT encoder but contributes masked-image-modeling pretraining; overlaps on method/modality, differs on the training objective.\n5. **DeiT-LT / DearKD (2022–2024)** — train patch-token ViTs; overlap on task/method and highlight the known limitation (ViT needs large pretraining data, lacks locality bias), differing in distillation-based data-efficiency remedies.\n\n## Where novelty could lie\nThe headline claim is not novel — it is the well-known ViT result. Plausible residual novelty would be a **known method on a new modality/dataset** (e.g., a domain where fixed-patch tokenization is untested), a **new efficiency/scale regime** (smaller data, lower compute), a **new tokenization variant** (adaptive/deformable patches, cf. DPT 2021 and \"Adaptive Tokenization\" 2025), or a **new evaluation/negative finding** about when convolution-free patch models fail. Any of these requires explicitly positioning against ViT and its descendants; simply \"patching + standard transformer for classification\" is already done.\n\n## Search coverage\nQueries: \"image classification transformer patch embedding\"; \"vision transformer without convolutions\"; \"patches as tokens image recognition transformer\"; \"pure transformer image recognition ImageNet\"; \"stand-alone self-attention image recognition\"; \"vision transformer data-efficient training DeiT distillation\"; \"transformer image classification pretrain large scale data requirement\"; \"generative pretraining pixels image GPT unlabeled.\" Limits: only the top few OpenAlex results per query; abstracts only; some abstracts missing; citation counts skew by age. The ViT match is decisive, so further searching would only refine the lineage, not change the verdict."
+    },
+    {
+      "id": "contrastive_ssl_vision",
+      "category": "vision",
+      "idea": "Learn image representations without any labels by pulling together two augmented views of the same image and pushing apart views of different images, then evaluate with a linear probe on ImageNet.",
+      "score": {
+        "precision": 0.2,
+        "recall": 0.75,
+        "f1": 0.31578947368421056,
+        "n_retrieved": 40,
+        "n_relevant_retrieved": 8,
+        "n_gold": 4,
+        "n_gold_found": 3,
+        "gold_found": [
+          "A Simple Framework for Contrastive Learning of Visual Representations",
+          "Momentum Contrast for Unsupervised Visual Representation Learning",
+          "Bootstrap your own latent: A new approach to self-supervised Learning"
+        ],
+        "gold_missed": [
+          "Barlow Twins: Self-Supervised Learning via Redundancy Reduction"
+        ],
+        "retrieved_not_in_gold": [
+          "Multi-network contrastive learning of visual representations",
+          "Instance-dimension dual contrastive learning of visual representations",
+          "Revisiting Contrastive Methods for Unsupervised Learning of Visual Representations",
+          "Contrastive Learning of Medical Visual Representations from Paired Images and Text",
+          "Mutual Contrastive Learning for Visual Representation Learning",
+          "Improved Baselines with Momentum Contrastive Learning",
+          "A Comparison of SimCLR and SwAV Contrastive Self-Supervised Learning Models For Landslide Detection",
+          "CVT-SimCLR: Contrastive visual representation learning with Conditional Random Fields and cross-modal fusion",
+          "Blockwise Self-Supervised Learning at Scale",
+          "Multi-task Self-Supervised Visual Learning",
+          "Improving Self-Supervised Learning by Characterizing Idealized Representations",
+          "Self-Supervised Learning for Vision Tasks",
+          "Evaluating Self-Supervised Learning via Risk Decomposition",
+          "Unsupervised Feature Learning via Non-parametric Instance Discrimination",
+          "Unsupervised Feature Learning by Cross-Level Instance-Group Discrimination",
+          "Unsupervised Feature Learning via Non-Parametric Instance-level Discrimination",
+          "Unsupervised Feature Learning by Cross-Level Instance-Group Discrimination",
+          "Unsupervised Feature Learning by Cross-Level Discrimination between Instances and Groups",
+          "BYOL for Audio: Self-Supervised Learning for General-Purpose Audio Representation",
+          "Self-supervised Learning Through Colorization for Microscopy Images",
+          "Run Away From your Teacher: a New Self-Supervised Approach Solving the Puzzle of BYOL",
+          "Run Away From your Teacher: Understanding BYOL by a Novel Self-Supervised Approach",
+          "InfoNCE Loss Provably Learns Cluster-Preserving Representations",
+          "Contrastive Learning of Preferences with a Contextual InfoNCE Loss",
+          "InfoNCE is a Free Lunch for Semantically guided Graph Contrastive Learning",
+          "Temperature-free loss function for contrastive learning",
+          "Improving Contrastive Learning of Sentence Embeddings with Focal InfoNCE",
+          "A survey on Image Data Augmentation for Deep Learning",
+          "A Survey of Data Augmentation Approaches for NLP",
+          "Data augmentation: A comprehensive survey of modern approaches",
+          "Text Data Augmentation for Deep Learning",
+          "Graph Data Augmentation for Graph Machine Learning: A Survey"
+        ]
+      },
+      "tool_calls": [
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\": \"contrastive learning visual representations augmented views\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W4304944802",
+            "https://openalex.org/W4386098011",
+            "https://openalex.org/W3166784900",
+            "https://openalex.org/W3091546937",
+            "https://openalex.org/W3159551428"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\": \"SimCLR simple framework contrastive learning\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W3005680577",
+            "https://openalex.org/W3034978746",
+            "https://openalex.org/W3009561768",
+            "https://openalex.org/W4392599394",
+            "https://openalex.org/W4413787821"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\": \"self-supervised learning linear probe ImageNet\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W4319323548",
+            "https://openalex.org/W2750912449",
+            "https://openalex.org/W4297833482",
+            "https://openalex.org/W7203704099",
+            "https://openalex.org/W4319653390"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\": \"instance discrimination unsupervised feature learning\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W2798991696",
+            "https://openalex.org/W3176455777",
+            "https://openalex.org/W2951292523",
+            "https://openalex.org/W3106875147",
+            "https://openalex.org/W3048309367"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\": \"Momentum Contrast MoCo unsupervised visual representation\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W3035524453",
+            "https://openalex.org/W2987283559",
+            "https://openalex.org/W4381611929",
+            "https://openalex.org/W4411747429",
+            "https://openalex.org/W3092113703"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\": \"BYOL bootstrap your own latent self-supervised\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W3035060554",
+            "https://openalex.org/W3135828102",
+            "https://openalex.org/W4285208191",
+            "https://openalex.org/W3122830288",
+            "https://openalex.org/W3108949087"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\": \"InfoNCE contrastive loss representation learning\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W4321276240",
+            "https://openalex.org/W4400482089",
+            "https://openalex.org/W4412378081",
+            "https://openalex.org/W4406975642",
+            "https://openalex.org/W4389518973"
+          ]
+        },
+        {
+          "tool": "search_papers",
+          "arguments": "{\"query\": \"data augmentation invariance contrastive learning survey\"}",
+          "n_results": 5,
+          "paper_ids": [
+            "https://openalex.org/W2954996726",
+            "https://openalex.org/W3162734203",
+            "https://openalex.org/W4309028162",
+            "https://openalex.org/W3176923149",
+            "https://openalex.org/W4221150228"
+          ]
+        }
+      ],
+      "total_retrievals": 40,
+      "hit_max_turns": false,
+      "retrieved_titles": [
+        "Multi-network contrastive learning of visual representations",
+        "Instance-dimension dual contrastive learning of visual representations",
+        "Revisiting Contrastive Methods for Unsupervised Learning of Visual Representations",
+        "Contrastive Learning of Medical Visual Representations from Paired Images and Text",
+        "Mutual Contrastive Learning for Visual Representation Learning",
+        "A Simple Framework for Contrastive Learning of Visual Representations",
+        "A simple framework for contrastive learning of visual representations",
+        "Improved Baselines with Momentum Contrastive Learning",
+        "A Comparison of SimCLR and SwAV Contrastive Self-Supervised Learning Models For Landslide Detection",
+        "CVT-SimCLR: Contrastive visual representation learning with Conditional Random Fields and cross-modal fusion",
+        "Blockwise Self-Supervised Learning at Scale",
+        "Multi-task Self-Supervised Visual Learning",
+        "Improving Self-Supervised Learning by Characterizing Idealized Representations",
+        "Self-Supervised Learning for Vision Tasks",
+        "Evaluating Self-Supervised Learning via Risk Decomposition",
+        "Unsupervised Feature Learning via Non-parametric Instance Discrimination",
+        "Unsupervised Feature Learning by Cross-Level Instance-Group Discrimination",
+        "Unsupervised Feature Learning via Non-Parametric Instance-level Discrimination",
+        "Unsupervised Feature Learning by Cross-Level Instance-Group Discrimination",
+        "Unsupervised Feature Learning by Cross-Level Discrimination between Instances and Groups",
+        "Momentum Contrast for Unsupervised Visual Representation Learning",
+        "Momentum Contrast for Unsupervised Visual Representation Learning",
+        "Two momentum contrast in triplet for unsupervised visual representation learning",
+        "Momentum Contrast for Unsupervised Visual Representation Learning",
+        "CO2: Consistent Contrast for Unsupervised Visual Representation Learning",
+        "Bootstrap your own latent: A new approach to self-supervised Learning",
+        "BYOL for Audio: Self-Supervised Learning for General-Purpose Audio Representation",
+        "Self-supervised Learning Through Colorization for Microscopy Images",
+        "Run Away From your Teacher: a New Self-Supervised Approach Solving the Puzzle of BYOL",
+        "Run Away From your Teacher: Understanding BYOL by a Novel Self-Supervised Approach",
+        "InfoNCE Loss Provably Learns Cluster-Preserving Representations",
+        "Contrastive Learning of Preferences with a Contextual InfoNCE Loss",
+        "InfoNCE is a Free Lunch for Semantically guided Graph Contrastive Learning",
+        "Temperature-free loss function for contrastive learning",
+        "Improving Contrastive Learning of Sentence Embeddings with Focal InfoNCE",
+        "A survey on Image Data Augmentation for Deep Learning",
+        "A Survey of Data Augmentation Approaches for NLP",
+        "Data augmentation: A comprehensive survey of modern approaches",
+        "Text Data Augmentation for Deep Learning",
+        "Graph Data Augmentation for Graph Machine Learning: A Survey"
+      ],
+      "answer": "# Report: Contrastive Learning of Image Representations via Augmented-View Discrimination with Linear-Probe Evaluation\n\n## 1. Verdict: **High overlap**\n\nThe idea is an almost verbatim description of the established contrastive self-supervised learning paradigm, and specifically of **SimCLR** (Chen et al., 2020). Pulling two augmented views of an image together while pushing other images' views apart, then evaluating with a linear classifier on ImageNet, is exactly SimCLR's recipe. This is textbook prior art, not a novel contribution.\n\n## 2. Idea breakdown\n- **Task:** Self-supervised / unsupervised visual representation learning (instance discrimination).\n- **Modality:** Natural images (vision).\n- **Method:** Contrastive learning with InfoNCE-style loss; positives = two augmented views of same image; negatives = views of other images; augmentation composition critical.\n- **Data:** ImageNet (unlabeled pretraining).\n- **Evaluation:** Linear probe on frozen features (ImageNet top-1).\n\n## 3. Closest prior work\n- **A Simple Framework for Contrastive Learning of Visual Representations (SimCLR)** — Chen et al., 2020. Overlaps on **every facet**: dual augmented views, contrastive loss, nonlinear projection head, ImageNet linear probe (76.5% top-1), batch-size/longer-training scaling. This is essentially the same idea; the proposal adds nothing not already covered.\n- **Momentum Contrast for Unsupervised Visual Representation Learning (MoCo)** — He et al., 2020. Same task, modality, contrastive method, and ImageNet linear protocol; differs in using a queue + momentum encoder instead of large-batch negatives.\n- **Improved Baselines with Momentum Contrastive Learning (MoCo v2)** — Chen et al., 2020. Same facets; differs by importing SimCLR's MLP head and stronger augmentations, showing the design choices are shared.\n- **Bootstrap Your Own Latent (BYOL)** — Grill et al., 2020. Overlaps on task, modality, augmentations, and linear evaluation, but **differs methodologically**: no negative pairs (online/target networks).\n- **Unsupervised Feature Learning via Non-parametric Instance Discrimination (NPID)** — Wu et al., 2018. Foundational instance-discrimination work; overlaps on task, modality, ImageNet, but predates the explicit augmented-view contrastive formulation.\n\n## 4. Where novelty could lie\nGiven the evidence, none of the listed \"novelty types\" survives as stated — the idea is a **known method for a known task with known benchmarks**. Genuine contribution would require a **new combination of components** (e.g., novel augmentation policy, hard-negative mining, temperature/loss variant), a **new efficiency or scale regime**, or applying this recipe to a **new modality/dataset**. Notably, the search surfaced many follow-ups (e.g., CO2's consistency regularization, CLD's instance-group discrimination, cross-level variants) that already pursue exactly such refinements, so even these margins are crowded. What would still need checking: whether a specific, unstated twist (particular loss, augmentation, or architecture) is genuinely new.\n\n## 5. Search coverage\nQueries run: \"contrastive learning visual representations augmented views\"; \"SimCLR simple framework contrastive learning\"; \"self-supervised learning linear probe ImageNet\"; \"instance discrimination unsupervised feature learning\"; \"Momentum Contrast MoCo unsupervised visual representation\"; \"BYOL bootstrap your own latent self-supervised\"; \"InfoNCE contrastive loss representation learning\"; \"data augmentation invariance contrastive learning survey.\" Limits: only top ~5 results per query, titles/abstracts only, OpenAlex coverage (a preprint and its published version appeared as separate records — treated as one). Coverage was sufficient to reach a confident verdict; further searching is unlikely to change it."
+    }
+  ],
+  "errors": []
+}
