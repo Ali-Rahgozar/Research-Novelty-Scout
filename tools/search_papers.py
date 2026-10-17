@@ -1,10 +1,15 @@
+import json
 import requests
+from pathlib import Path
 
 
 OPENALEX_URL = "https://api.openalex.org/works"
 
+CONFIG_PATH = Path(__file__).resolve().parent.parent / "config.json"
+with CONFIG_PATH.open("r", encoding="utf-8") as f:
+    config = json.load(f)
 
-RESULTS_PER_QUERY = 5
+RESULTS_PER_QUERY = config["results_per_query"]
 
 
 def reconstruct_abstract(inverted_index):

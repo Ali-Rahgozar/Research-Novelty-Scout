@@ -1,4 +1,4 @@
-"""Retrieval eval: precision, recall and F1 of the papers the agent retrieves.
+"""Retrieval eval: recall of the papers the agent retrieves.
 
 Papers are matched by exact OpenAlex ID against the gold set.
 
@@ -18,12 +18,9 @@ if str(ROOT) not in sys.path:
 GOLD_PATH = Path(__file__).resolve().parent / "gold_set.json"
 
 
-def prf(retrieved_ids, gold_ids):
+def recall(retrieved_ids, gold_ids):
     hits = len(retrieved_ids & gold_ids)
-    precision = hits / len(retrieved_ids) if retrieved_ids else 0.0
-    recall = hits / len(gold_ids) if gold_ids else 0.0
-    f1 = 2 * precision * recall / (precision + recall) if hits else 0.0
-    return precision, recall, f1
+    return hits / len(gold_ids) if gold_ids else 0.0
 
 
 def main():
@@ -36,17 +33,17 @@ def main():
     cases = json.loads(GOLD_PATH.read_text(encoding="utf-8"))[: args.limit]
     rows = []
 
-    print(f"{'idea':<30}{'precision':>10}{'recall':>9}{'f1':>7}")
+    print(f"{'idea':<30}{'recall':>7}")
     for case in cases:
         trace = run_agent_traced(case["idea"])
         retrieved = {p["id"] for p in trace["retrieved_papers"]}
         gold = {g["id"] for g in case["gold"]}
-        scores = prf(retrieved, gold)
-        rows.append(scores)
-        print(f"{case['id']:<30}{scores[0]:>10.2f}{scores[1]:>9.2f}{scores[2]:>7.2f}", flush=True)
+        score = recall(retrieved, gold)
+        rows.append(score)
+        print(f"{case['id']:<30}{score:>7.2f}", flush=True)
 
     n = len(rows)
-    print(f"{'MEAN':<30}" + "".join(f"{sum(r[i] for r in rows) / n:>{w}.2f}" for i, w in enumerate((10, 9, 7))))
+    print(f"{'MEAN':<30}{sum(rows) / n:>7.2f}")
 
 
 if __name__ == "__main__":

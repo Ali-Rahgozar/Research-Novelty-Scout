@@ -233,4 +233,9 @@ if __name__ == "__main__":
         raise SystemExit("Research idea cannot be empty.")
 
     print("\nAgent:\n")
-    print(run_agent(idea, verbose=args.verbose))
+    answer = run_agent_traced(idea, verbose=args.verbose)['answer']
+    retrieve_papers = run_agent_traced(idea, verbose=args.verbose)['retrieved_papers']
+    print(answer)
+    print("\nRetrieved papers:")
+    for paper in retrieve_papers:
+        print(f"- {paper.get('title')} ({paper.get('year')}) [{paper.get('id')}]")

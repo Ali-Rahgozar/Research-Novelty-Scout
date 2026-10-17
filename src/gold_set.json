@@ -1,32 +1,4 @@
-[
-  {
-    "id": "peft_lowrank",
-    "category": "nlp",
-    "idea": "I want to adapt a large pretrained language model to downstream tasks by freezing the original weights and injecting small trainable low-rank matrices into the transformer layers, so only a tiny fraction of parameters is updated.",
-    "gold": [
-      {
-        "title": "LoRA: Low-Rank Adaptation of Large Language Models",
-        "id": "https://openalex.org/W4387156572"
-      },
-      {
-        "title": "Parameter-Efficient Transfer Learning for NLP",
-        "id": "https://openalex.org/W2913946806"
-      },
-      {
-        "title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
-        "id": "https://openalex.org/W3174770825"
-      },
-      {
-        "title": "The Power of Scale for Parameter-Efficient Prompt Tuning",
-        "id": "https://openalex.org/W3152956381"
-      },
-      {
-        "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
-        "id": "https://openalex.org/W7133233472"
-      }
-    ]
-  },
-  {
+[ {
     "id": "vit_patches",
     "category": "vision",
     "idea": "Can we drop convolutions for image classification entirely by cutting an image into fixed-size patches, embedding them as tokens, and feeding them to a standard transformer encoder?",
