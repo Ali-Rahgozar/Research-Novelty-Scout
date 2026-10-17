@@ -1,4 +1,5 @@
 import json
+import os
 import requests
 from pathlib import Path
 
@@ -10,6 +11,10 @@ with CONFIG_PATH.open("r", encoding="utf-8") as f:
     config = json.load(f)
 
 RESULTS_PER_QUERY = config["results_per_query"]
+
+# The key raises the rate limit (30 req/s vs 10) and is required for paging
+# past the first page. config.json wins; the env var is a convenience fallback.
+OPENALEX_API_KEY = config.get("openalex_api_key") or os.getenv("OPENALEX_API_KEY")
 
 
 def reconstruct_abstract(inverted_index):
@@ -42,6 +47,9 @@ def fetch_papers(query: str, per_page: int = RESULTS_PER_QUERY) -> list[dict]:
             "cited_by_count"
         ),
     }
+
+    if OPENALEX_API_KEY:
+        params["api_key"] = OPENALEX_API_KEY
 
     response = requests.get(OPENALEX_URL, params=params, timeout=30)
     response.raise_for_status()

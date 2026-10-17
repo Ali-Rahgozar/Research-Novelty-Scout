@@ -106,7 +106,7 @@ def execute_tool(tool_name: str, arguments: str) -> tuple[str, list[dict]]:
 
 def run_agent_traced(
     user_message: str,
-    max_turns: int = 8,
+    max_turns: int = 10,
     verbose: bool = False,
     temperature: float | None = None,
 ) -> dict:
