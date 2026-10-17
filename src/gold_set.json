@@ -1,0 +1,215 @@
+[ {
+    "id": "vit_patches",
+    "category": "vision",
+    "idea": "Can we drop convolutions for image classification entirely by cutting an image into fixed-size patches, embedding them as tokens, and feeding them to a standard transformer encoder?",
+    "gold": [
+      {
+        "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+        "id": "https://openalex.org/W3094502228"
+      },
+      {
+        "title": "Training data-efficient image transformers & distillation through attention",
+        "id": "https://openalex.org/W3116489684"
+      },
+      {
+        "title": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+        "id": "https://openalex.org/W3138516171"
+      },
+      {
+        "title": "Attention Is All You Need",
+        "id": "https://openalex.org/W2626778328"
+      }
+    ]
+  },
+  {
+    "id": "contrastive_ssl_vision",
+    "category": "vision",
+    "idea": "Learn image representations without any labels by pulling together two augmented views of the same image and pushing apart views of different images, then evaluate with a linear probe on ImageNet.",
+    "gold": [
+      {
+        "title": "A Simple Framework for Contrastive Learning of Visual Representations",
+        "id": "https://openalex.org/W3005680577"
+      },
+      {
+        "title": "Momentum Contrast for Unsupervised Visual Representation Learning",
+        "id": "https://openalex.org/W3035524453"
+      },
+      {
+        "title": "Bootstrap your own latent: A new approach to self-supervised Learning",
+        "id": "https://openalex.org/W3035060554"
+      },
+      {
+        "title": "Barlow Twins: Self-Supervised Learning via Redundancy Reduction",
+        "id": "https://openalex.org/W3134652006"
+      }
+    ]
+  },
+  {
+    "id": "retrieval_augmented_lm",
+    "category": "nlp",
+    "idea": "Improve open-domain question answering by letting a language model retrieve relevant passages from a large external corpus with a learned dense retriever and condition its generation on them.",
+    "gold": [
+      {
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "id": "https://openalex.org/W3098425262"
+      },
+      {
+        "title": "REALM: Retrieval-Augmented Language Model Pre-Training",
+        "id": "https://openalex.org/W3007672467"
+      },
+      {
+        "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+        "id": "https://openalex.org/W3015883388"
+      },
+      {
+        "title": "Atlas: Few-shot Learning with Retrieval Augmented Language Models",
+        "id": "https://openalex.org/W4301243929"
+      }
+    ]
+  },
+  {
+    "id": "diffusion_image_gen",
+    "category": "generative",
+    "idea": "Generate high-quality images by training a network to reverse a gradual noising process, and make it cheaper by running the denoising in a compressed latent space instead of pixel space.",
+    "gold": [
+      {
+        "title": "Denoising Diffusion Probabilistic Models",
+        "id": "https://openalex.org/W3036167779"
+      },
+      {
+        "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+        "id": "https://openalex.org/W4312933868"
+      },
+      {
+        "title": "Score-Based Generative Modeling through Stochastic Differential Equations",
+        "id": "https://openalex.org/W3110257065"
+      },
+      {
+        "title": "Denoising Diffusion Implicit Models",
+        "id": "https://openalex.org/W3092442149"
+      },
+      {
+        "title": "Diffusion Models Beat GANs on Image Synthesis",
+        "id": "https://openalex.org/W3162926177"
+      }
+    ]
+  },
+  {
+    "id": "rlhf_alignment",
+    "category": "nlp",
+    "idea": "Make a language model follow instructions better by training a reward model on human preference comparisons and then optimizing the model against it with reinforcement learning.",
+    "gold": [
+      {
+        "title": "Training language models to follow instructions with human feedback",
+        "id": "https://openalex.org/W7133211372"
+      },
+      {
+        "title": "Learning to summarize from human feedback",
+        "id": "https://openalex.org/W3082115681"
+      },
+      {
+        "title": "Deep reinforcement learning from human preferences",
+        "id": "https://openalex.org/W2626804490"
+      },
+      {
+        "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+        "id": "https://openalex.org/W7133208539"
+      }
+    ]
+  },
+  {
+    "id": "cot_reasoning",
+    "category": "nlp",
+    "idea": "Get large language models to solve multi-step arithmetic and commonsense problems better by prompting them to write out intermediate reasoning steps before the final answer, and sampling several reasoning paths.",
+    "gold": [
+      {
+        "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+        "id": "https://openalex.org/W7133224126"
+      },
+      {
+        "title": "Large Language Models are Zero-Shot Reasoners",
+        "id": "https://openalex.org/W4281557260"
+      },
+      {
+        "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+        "id": "https://openalex.org/W4221161695"
+      }
+    ]
+  },
+  {
+    "id": "gnn_node_classification",
+    "category": "graph",
+    "idea": "Semi-supervised node classification on citation networks using a neural network that aggregates features from each node's neighbours, with only a handful of labelled nodes.",
+    "gold": [
+      {
+        "title": "Semi-Supervised Classification with Graph Convolutional Networks",
+        "id": "https://openalex.org/W2519887557"
+      },
+      {
+        "title": "Inductive Representation Learning on Large Graphs",
+        "id": "https://openalex.org/W2624431344"
+      },
+      {
+        "title": "Graph Attention Networks",
+        "id": "https://openalex.org/W2766453196"
+      }
+    ]
+  },
+  {
+    "id": "vision_language_zero_shot",
+    "category": "multimodal",
+    "idea": "Train an image encoder and a text encoder jointly on hundreds of millions of web image-caption pairs so that the model can classify images zero-shot by comparing them to text prompts of class names.",
+    "gold": [
+      {
+        "title": "Learning Transferable Visual Models From Natural Language Supervision",
+        "id": "https://openalex.org/W3135367836"
+      },
+      {
+        "title": "Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision",
+        "id": "https://openalex.org/W3126337491"
+      }
+    ]
+  },
+  {
+    "id": "efficient_attention_io",
+    "category": "nlp",
+    "idea": "Speed up transformer self-attention and cut its memory use without approximating it, by reorganizing the computation to reduce reads and writes between GPU high-bandwidth memory and on-chip SRAM.",
+    "gold": [
+      {
+        "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+        "id": "https://openalex.org/W7133227460"
+      },
+      {
+        "title": "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning",
+        "id": "https://openalex.org/W4384648639"
+      },
+      {
+        "title": "Reformer: The Efficient Transformer",
+        "id": "https://openalex.org/W2994673210"
+      },
+      {
+        "title": "Longformer: The Long-Document Transformer",
+        "id": "https://openalex.org/W3015468748"
+      }
+    ]
+  },
+  {
+    "id": "deep_rl_atari",
+    "category": "rl",
+    "idea": "Train a single neural network agent to play many Atari games directly from raw pixels using Q-learning with experience replay.",
+    "gold": [
+      {
+        "title": "Playing Atari with Deep Reinforcement Learning",
+        "id": "https://openalex.org/W1757796397"
+      },
+      {
+        "title": "Human-level control through deep reinforcement learning",
+        "id": "https://openalex.org/W2145339207"
+      },
+      {
+        "title": "Rainbow: Combining Improvements in Deep Reinforcement Learning",
+        "id": "https://openalex.org/W2761873684"
+      }
+    ]
+  }
+]
